@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traveller | Login</title>
+
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/typeAccess.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="./index.html"><div class="logo-container"></div></a>
+            </header>
+            <main class="registration">
+                <div class="group-registration">
+                    <div class="title-form">
+                        <h2>Insira suas informações</h2>
+                    </div>
+                    <form action="" class="form-cadastro">
+                        <div class="login-data">
+                            <div class="image-profile"><img src="./assets/profile.jpg" alt="Imagem de perfil"></div>
+                            <div class="container-data">
+                                <label for="user">Usuário</label>
+                                <input type="text" name="user">
+                            </div>
+                            <div class="container-data">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" placeholder="">
+                            </div>
+                            <div class="container-data">
+                                <label for="senhaConfirm">Confirme sua senha</label>
+                                <input type="password" name="senhaConfirm" placeholder="">
+                            </div>
+                        </div>
+                        <div class="personal-data">
+                            <div class="container-inputs">
+                                <div class="container-data">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" class="input-name">
+                                </div>
+    
+                                <div class="container-data">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" class="input-email">
+                                </div>
+                                
+                                <div class="container-data">
+                                    <label for="cep">CEP</label>
+                                    <input type="number" name="cep" class="input-cep">
+                                </div>
+                                
+                                <div class="container-data">
+                                    <label for="rua">Rua</label>
+                                    <input type="text" name="rua" class="input-rua">
+                                </div>
+                                
+                                <div class="container-data">
+                                    <label for="numero">Número</label>
+                                    <input type="text" name="numero" class="input-numero">
+                                </div>
+                                
+                                <div class="container-data">
+                                    <label for="bairro">Bairro</label>
+                                    <input type="text" name="bairro" class="input-bairro">
+                                </div>
+                                
+                                <div class="container-data">
+                                    <label for="cidade">Cidade</label>
+                                    <input type="text" name="cidade" class="input-cidade">
+                                </div>
+                                
+                                <div class="container-data">
+                                    <label for="uf">UF</label>
+                                    <select name="uf" id="uf" class="input-uf">
+                                        <option value="SP">SP</option>
+                                        <option value="MG">MG</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="container-buttons">
+                                <a class="button-form" href="./typeAccess.html">Cancelar</a>
+                                <button type="submit" class="button-form submit">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+
+        <script src="./scripts/typeAccess.js"></script>
+    </body>
+</html>
