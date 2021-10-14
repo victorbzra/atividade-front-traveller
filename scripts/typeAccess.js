@@ -1,3 +1,4 @@
+
 const inputsForm = document.querySelectorAll('.formInput');
 
 function animationInput(input) {

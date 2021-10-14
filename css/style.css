@@ -129,8 +129,13 @@
     color: #1D3F5B;
 }
 
+.nav-link.scrolled {
+    font-weight: 500;
+    color: #fff;
+}
+
 .nav-link:hover {
-    color: #0B5ED7;
+    color: #5DF04E;
 }
 
 
@@ -138,7 +143,52 @@
     color: #5DF04E;
 } 
 
+.nav-bg {
+    background: transparent;
+    transition: background-color 200ms linear;
+}
+
+.nav-bg.scrolled {
+    background-color: #0C3049 !important;
+    transition: background-color 200ms linear;
+}
+
+
+.navbar-brand {
+    background-image: url(../assets/logo.svg);
+    width: 280px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    transition: background-image 200ms;
+}
+
+
+.navbar-brand.scrolled {
+    background-image: url(../assets/logo-white.svg);
+    width: 280px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    transition: background-image 200ms;
+}
+
+.nav-bg {
+    background: transparent;
+    transition: background-color 200ms linear;
+}
+
+.nav-bg.scrolled {
+    background-color: #0C3049 !important;
+    transition: background-color 200ms linear;
+}
+
+
 /* Barra de pesquisa */
+
+.barra-pesquisa {
+    margin-top: 4rem;
+}
 
 #pesquisar, #icon {
     border-radius: 30px;
@@ -161,6 +211,7 @@
 h3 {
     color:#0C3049;
 }
+
 
 .desc {
     color: #68717A;

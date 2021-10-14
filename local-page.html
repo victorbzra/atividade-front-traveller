@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/local.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg fixed-top nav-bg">
+            <div class="container px-5">
+                <a class="navbar-brand" href="./home.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./locais.html">LOCAIS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">HOSPEDAGEM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">ALUGUE SEU VEÍCULO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- PESQUISAR-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 align-items-center mt-5">
+                <div class="row mb-5 barra-pesquisa">
+                    <div class="col-1"></div>
+                    <form class="col-10 d-flex">
+                        <input class="form-control me-2" id="pesquisar" style="text-indent:2.5rem;" type="search" placeholder="Pesquise pelo seu local favorito!" aria-label="Search">
+                        <button class="btn btn-outline-success" id="btn-pesquisa" type="submit">Pesquisar</button>
+                    </form>
+                <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Conteúdo  -->
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row">
+            <!-- Cabeçalho -->
+            <header class="mb-4">
+                <h1 class="fw-bolder mb-1">São Paulo</h1>
+                <div class="text-muted fst-italic mb-2">Publicado em 15 de janeiro, 2021 por Gulliver</div>
+                <a class="badge bg-primary text-decoration-none link-light rounded-pill" href="#!">Urbano</a>
+                <a class="badge bg-warning text-decoration-none link-light rounded-pill" href="#!">Arquitetura</a>
+            </header>
+
+            <div class="col-lg-8">
+                <!-- Conteúdo Local-->
+                <article>
+                    <!-- Imagem -->
+                    <figure class="mb-4"><img class="img-fluid rounded" src="./assets/saopaulo.jpg" alt="..." /></figure>
+
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554.</p>
+                        <p class="fs-5 mb-4">Fundada em 1554 por padres jesuítas, a cidade é mundialmente conhecida e exerce significativa influência nacional e internacional, seja do ponto de vista cultural, econômico ou político. Conta com importantes monumentos, parques e museus, como o Memorial da América Latina, o Museu da Língua Portuguesa, o Museu do Ipiranga, o MASP, o Parque Ibirapuera, o Jardim Botânico de São Paulo e a avenida Paulista, e eventos de grande repercussão, como a Bienal Internacional de Arte, o Grande Prêmio do Brasil de Fórmula 1, a São Paulo Fashion Week e a Parada do Orgulho LGBT.</p>                        
+                    </section>
+
+                </article>
+               
+            </div>
+
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+            
+                <!-- Navegação -->
+                <div class="card mb-4">
+                    <div class="card-header">Nesta página:</div>
+                    <div class="card-body">
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#parques">Parques</a>
+                            <a class="list-group-item list-group-item-action" href="#gastronomia">Gastronomia</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Entretenimento</a>
+                            <a class="list-group-item list-group-item-action" href="#hospedagem">Hospedagem & Locomoção</a>
+                            <a class="list-group-item list-group-item-action" href="#dicas">Dicas Úteis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="card mb-4">
+                    <div class="card-header">Como chegar</div>
+                    <div class="card-body">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467689.7971944828!2d-46.8754915172196!3d-23.68216038895823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1634149141554!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+    
+            </div>
+        </div>
+    </div>
+
+
+    <article class="container px-4 px-lg-5 mb-5">
+        <div class="row">
+            <h2 class="fw-bolder mb-4 mt-5" id="parques">Parques</h2>
+            <p class="fs-5 mb-4">Os parques em São Paulo são belezas da natureza em meio à cidade cinza e refúgios da correria do dia a dia dos paulistanos. As áreas verdes oferecem várias atividades e servem para recarregar as energias e relaxar. </p>
+            <p class="fs-5 mb-4">Mesmo se você estiver só de passagem pela cidade, ou quem sabe até morar em São Paulo mas sempre fica em dúvida do que fazer no final de semana, esses lugares são opções incríveis e que precisam ser aproveitadas.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/saopaulo.jpg" class="card-img-top" alt="São Paulo - SP">
+                    <div class="card-body">
+                      <h5 class="card-title">São Paulo</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam.</p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/saopaulo.jpg" class="card-img-top" alt="São Paulo - SP">
+                    <div class="card-body">
+                      <h5 class="card-title">São Paulo</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam.</p>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/saopaulo.jpg" class="card-img-top" alt="São Paulo - SP">
+                    <div class="card-body">
+                      <h5 class="card-title">São Paulo</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam.</p>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/saopaulo.jpg" class="card-img-top" alt="São Paulo - SP">
+                    <div class="card-body">
+                      <h5 class="card-title">São Paulo</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam.</p>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="fw-bolder mb-4 mt-5" id="gastronomia">Gastronomia</h2>
+            <p class="fs-5 mb-4"> São Paulo é uma das principais cidades do mundo no setor de alimentação e gastronomia. A capital paulista conta com cerca de 6% da população trabalhando com serviços de alimentação, mais de 23 mil restaurantes com culinária de diversos países do mundo, comida de rua, 13 cursos de universidades voltados à gastronomia, além de 30% da área voltada à agricultura familiar.</p>
+            <p class="fs-5 mb-4">A gastronomia paulistana é reconhecida mundialmente não só pelos seus números, mas pela sua qualidade. Em 2018, recebeu o título de Capital da Gastronomia pelo Sirha (Salon Internacional de la Restauration, de l’hôtellerie et de l’ Alimentation) – e também conquistou o título de Capital Ibero-Americana da Cultura Gastronômica 2018, concedida pela Academia Ibero-Americana de Gastronomia.</p>
+            <p class="fs-5 mb-4">A gastronomia, além de um Patrimônio Histórico e Cultural, é um pilar do desenvolvimento econômico e social para a cidade de São Paulo.</p>
+        </div>
+
+
+        <div class="row" id="hospedagem">
+            <h2 class="fw-bolder mb-4 mt-5" id="gastronomia">Hospedagem e Locomoção</h2>
+            <p class="fs-5 mb-4"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem explicabo provident, doloribus qui ipsum distinctio placeat accusamus impedit pariatur.</p>
+            <p class="fs-5 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ad recusandae a nobis aperiam beatae iure reiciendis distinctio accusamus. Fugiat reprehenderit, eveniet modi provident animi esse ea?</p>
+            <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quam possimus natus!</p>
+        </div>
+    
+        
+    <!-- ACORDEONS  -->
+    <section class="accordion" id="accordionExample">
+
+        <!-- CONTAINER HOSPEDAGEM  -->
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5 style="color: #0D114F">Hotéis</h5>
+                </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+
+                <div class="row row-cols-1 row-cols-md-4 g-3 mx-3 my-2">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/ibis.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">IBIS Styles São Paulo Anhembi</h6>
+                                <p class="card-text"><small>Av. Cruzeiro do Sul, 1709 - Santana, São Paulo - SP,
+                                        Brasil</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/comfort.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Comfort Ibirapuera</h6>
+                                <p class="card-text"><small>Av. Sabiá, 825 - Indianópolis, São Paulo - SP,
+                                        04515-001</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bt-paulista.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Blue Tree Premium Morumbi</h6>
+                                <p class="card-text"><small>Av. Roque Petroni Júnior, 1000 - Vila Gertrudes, São
+                                        Paulo - SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/mercure.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Mercure São Paulo Pamplona</h6>
+                                <p class="card-text"><small>Av. Roque Petroni Júnior, 1000 - Vila Gertrudes, São
+                                        Paulo - SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bt-paulista.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Sheraton São Paulo WTC Hotel</h6>
+                                <p class="card-text"><small>Av. Nações Unidas, 12559 - Brooklin Novo, São Paulo
+                                        SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bourbon.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Bourbon Convention Ibirapuera</h6>
+                                <p class="card-text"><small>Bourbon Convention Ibirapuera</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/mercure.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Blue Tree Premium Paulista</h6>
+                                <p class="card-text"><small>Rua Peixoto Gomide, 707 - Bela Vista, São Paulo -
+                                        SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bt-paulista.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Golden Tulip Paulista Plaza</h6>
+                                <p class="card-text"><small>Alameda Santos, 85 - Jardins, São Paulo - SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="accordion-item" id="locomocao">
+            <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                    <h5 style="color: #0D114F">Locadoras de veículos</h5>
+                </button>
+            </h2>
+
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                data-bs-parent="#accordionExample">
+
+                <div class="row row-cols-1 row-cols-md-4 g-3 mx-3 my-2">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/ibis.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">IBIS Styles São Paulo Anhembi</h6>
+                                <p class="card-text"><small>Av. Cruzeiro do Sul, 1709 - Santana, São Paulo - SP, Brasil</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/comfort.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Comfort Ibirapuera</h6>
+                                <p class="card-text"><small>Av. Sabiá, 825 - Indianópolis, São Paulo - SP,04515-001</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bt-paulista.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Blue Tree Premium Morumbi</h6>
+                                <p class="card-text"><small>Av. Roque Petroni Júnior, 1000 - Vila Gertrudes, São
+                                        Paulo - SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/mercure.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Mercure São Paulo Pamplona</h6>
+                                <p class="card-text"><small>Av. Roque Petroni Júnior, 1000 - Vila Gertrudes, São
+                                        Paulo - SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bt-paulista.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Sheraton São Paulo WTC Hotel</h6>
+                                <p class="card-text"><small>Av. Nações Unidas, 12559 - Brooklin Novo, São Paulo
+                                        SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bourbon.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Bourbon Convention Ibirapuera</h6>
+                                <p class="card-text"><small>Bourbon Convention Ibirapuera</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/mercure.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Blue Tree Premium Paulista</h6>
+                                <p class="card-text"><small>Rua Peixoto Gomide, 707 - Bela Vista, São Paulo -
+                                        SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/bt-paulista.png" class="card-img-top" alt="São Paulo - SP">
+                            <div class="card-body">
+                                <h6 class="card-title">Golden Tulip Paulista Plaza</h6>
+                                <p class="card-text"><small>Alameda Santos, 85 - Jardins, São Paulo - SP</small></p>
+                                <div class="hotel_avaliacao">
+                                    4,95
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="row">
+        <h2 class="fw-bolder mb-4 mt-5" id="dicas">Dicas úteis</h2>
+        <p class="fs-5 mb-4"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem explicabo provident, doloribus qui ipsum distinctio placeat accusamus impedit pariatur.</p>
+        <p class="fs-5 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ad recusandae a nobis aperiam beatae iure reiciendis distinctio accusamus. Fugiat reprehenderit, eveniet modi provident animi esse ea?</p>
+        <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quam possimus natus!</p>
+    </div>
+
+    </article>
+
+
+    <!-- FOOTER  -->
+
+    <footer class="py-5">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Gulliver Traveller</p></div>
+    </footer>
+
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+        <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="./js/main.js"></script>
+        <script> 
+          $(window).scroll(function(){
+          $('nav').toggleClass('scrolled', $(this).scrollTop()  >  70);
+          $('.navbar-brand').toggleClass('scrolled', $(this).scrollTop()  >  70);
+          $('.nav-link').toggleClass('scrolled', $(this).scrollTop()  >  70);
+          });
+        </script>
+
+
+</body>
+
+
+</html>
