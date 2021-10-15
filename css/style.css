@@ -258,3 +258,19 @@ h3 {
 footer {
     background-color: #0C3049;
 }
+
+.carousel-card {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    height: 45px;
+    width: 45px;
+    background: url(../assets/profile.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-left: 20px;
+}
