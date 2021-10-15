@@ -1,3 +1,17 @@
+a {
+    text-decoration: none;
+    color: #0C3049;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0C3049;
+}
+
+.card-link:hover {
+    color: #0C3049;
+}
+
 .container-data-profile {
     position: relative;
     padding: 20px 0;

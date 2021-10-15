@@ -3,3 +3,42 @@
     font-size: small;
     text-align: center;
 }
+
+.links, h2 {
+    text-decoration: none;
+    color: #0C3049;
+}
+
+.links:hover {
+    color: #5DF04E;
+}
+
+.links-verde {
+    text-decoration: none;
+    color: #30D220;
+}
+
+.links-verde:hover {
+    color: #0C3049;
+}
+
+.hotel {
+    cursor: pointer;
+}
+
+.img-container {
+    display: inline;
+    height: 300px;    
+    margin-bottom: 1rem;
+}
+
+.img-blog {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: inline;
+}
+
+.func {
+    list-style-type:none;
+}
