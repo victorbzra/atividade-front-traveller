@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -18,65 +19,71 @@
             <main class="registration">
                 <div class="group-registration">
                     <div class="title-form">
-                        <h2>Insira suas informaÃ§Ãµes</h2>
+                        <h2>Insira suas informações</h2>
                     </div>
-                    <form action="./efetivar_cadastro" class="form-cadastro"method="POST" 
+                    <form action="./update-cadastro" class="form-cadastro"method="POST" 
 		 enctype="multipart/form-data">
                         <div class="login-data">
-                            <div class="image-profile"><img src="./assets/profile.png" alt="Imagem de perfil"></div>
+                            <div class="image-profile"><img src="./users/${Usuario.foto}" alt="Imagem de perfil"></div>
                             <div class="container-data">
-                                <label for="user">UsuÃ¡rio</label>
-                                <input type="text" name="txtUsuario">
+                                <label for="user">Usuário</label>
+                                <input type="text" name="txtUsuario" value="${Usuario.usuario}">
                             </div>
                             <div class="container-data">
                                 <label for="senha">Senha</label>
-                                <input type="password" name="txtSenha" placeholder="">
+                                <input id="senha" type="password" name="txtSenha" placeholder="" value="${Usuario.senha}">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"> <img src="assets/visibilidade.png"
+                                            class="pointer visibilidade" alt="Imagem para exibir senha">
+                                    </div>
+                                </div>
                             </div>
                             <div class="container-data">
-                                <label for="senhaConfirm">Confirme sua senha</label>
-                                <input type="password" name="senhaConfirm" placeholder="">
+                                <label for="id">ID</label>
+                                <input type="text" name="txtId" placeholder="" value="${Usuario.id}">
                             </div>
                         </div>
                         <div class="personal-data">
                             <div class="container-inputs">
                                 <div class="container-data">
                                     <label for="nome">Nome</label>
-                                    <input type="text" name="txtNome" class="input-name">
+                                    <input type="text" name="txtNome" class="input-name" value="${Usuario.nome}">
                                 </div>
     
                                 <div class="container-data">
                                     <label for="email">E-mail</label>
-                                    <input type="email" name="txtEmail" class="input-email">
+                                    <input type="text" name="txtEmail" class="input-email" value="${Usuario.email}">
                                 </div>
                                 
                                 <div class="container-data">
                                     <label for="cep">CEP</label>
-                                    <input type="number" name="txtCep" class="input-cep">
+                                    <input type="text" name="txtCep" class="input-cep" value="${Usuario.cep}">
                                 </div>
                                 
                                 <div class="container-data">
                                     <label for="rua">Rua</label>
-                                    <input type="text" name="txtRua" class="input-rua">
+                                    <input type="text" name="txtRua" class="input-rua"value="${Usuario.rua}">
                                 </div>
                                 
                                 <div class="container-data">
-                                    <label for="numero">NÃºmero</label>
-                                    <input type="text" name="txtNumero" class="input-numero">
+                                    <label for="numero">Número</label>
+                                    <input type="text" name="txtNumero" class="input-numero" value="${Usuario.numero}">
                                 </div>
                                 
                                 <div class="container-data">
                                     <label for="bairro">Bairro</label>
-                                    <input type="text" name="txtBairro" class="input-bairro">
+                                    <input type="text" name="txtBairro" class="input-bairro" value="${Usuario.bairro}">
                                 </div>
                                 
                                 <div class="container-data">
                                     <label for="cidade">Cidade</label>
-                                    <input type="text" name="txtCidade" class="input-cidade">
+                                    <input type="text" name="txtCidade" class="input-cidade" value="${Usuario.cidade}">
                                 </div>
                                 
                                 <div class="container-data">
                                     <label for="uf">UF</label>
-                                    <select name="txtEstado" id="uf" class="input-uf">
+                                    <select name="txtEstado" id="uf" class="input-uf"value="${Usuario.estado}">
+                                        <option selected value="${Usuario.estado}">${Usuario.estado}</option>
                                         <option value="AC">AC</option>
 										<option value="AL">AL</option>
 										<option value="AP">AP</option>
@@ -124,5 +131,6 @@
         </div>
 
         <script src="./scripts/typeAccess.js"></script>
+        <script src="./scripts/exibir_senha.js"></script>
     </body>
 </html>
