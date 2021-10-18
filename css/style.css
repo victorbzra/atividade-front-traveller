@@ -269,8 +269,25 @@ footer {
 .profile-picture {
     height: 45px;
     width: 45px;
-    background: url(../assets/profile.jpg) no-repeat center;
-    background-size: cover;
     border-radius: 100%;
     margin-left: 20px;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-container {
+    display: inline;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.img-blog {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: inline;
 }
