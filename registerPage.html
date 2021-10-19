@@ -23,18 +23,22 @@
                     <form action="./efetivar_cadastro" class="form-cadastro"method="POST" 
 		 enctype="multipart/form-data">
                         <div class="login-data">
-                            <div class="image-profile"><img src="./assets/profile.png" alt="Imagem de perfil"></div>
+                            <div class="image-profile"><img src="./assets/profile.jpg" alt="Imagem de perfil"></div>
                             <div class="container-data">
                                 <label for="user">Usuário</label>
                                 <input type="text" name="txtUsuario">
                             </div>
                             <div class="container-data">
                                 <label for="senha">Senha</label>
-                                <input type="password" name="txtSenha" placeholder="">
+                                <input type="password" name="txtSenha" placeholder="" class="inputSenha">
                             </div>
                             <div class="container-data">
                                 <label for="senhaConfirm">Confirme sua senha</label>
-                                <input type="password" name="senhaConfirm" placeholder="">
+                                <input type="password" name="senhaConfirm" placeholder="" class="inputSenha">
+                                <div class="divMostrarSenha">
+                                    <img src="./assets/eye.svg" alt="exibir senha">
+                                    <span>Mostrar senha</span>
+                                </div>
                             </div>
                         </div>
                         <div class="personal-data">

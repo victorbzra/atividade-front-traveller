@@ -1,4 +1,3 @@
-
 const inputsForm = document.querySelectorAll('.formInput');
 
 function animationInput(input) {
@@ -10,16 +9,21 @@ inputsForm.forEach((input)=>{
     input.addEventListener('blur', (input)=>{input.srcElement.classList.toggle('active');});
 });
 
-// const buttonSingUp = document.querySelector('.signUp-action');
-// const main = document.querySelector('main');
-// const access = document.querySelector('.group-access');
-// const regis = document.querySelector('.group-registration');
-// const buttons = document.querySelectorAll('.button-form');
+const divSenha = document.querySelectorAll('.divMostrarSenha');
+const imgSenha = document.querySelector('.divMostrarSenha img');
+const textSenha = document.querySelector('.divMostrarSenha span');
+const inputSenha = document.querySelectorAll('.inputSenha');
 
-// function initForm() {
-//     main.classList.toggle('registration');
-//     access.classList.toggle('off');
-//     regis.classList.toggle('on');
-// }
-
-// buttonSingUp.addEventListener('click', initForm);
+divSenha.forEach((div)=> {
+    div.addEventListener('click', ()=>{
+        if(imgSenha.getAttribute('src') == './assets/eye.svg') {
+            imgSenha.setAttribute('src', './assets/eye-off.svg');
+            textSenha.innerText = 'Esconder senha';
+            inputSenha.forEach((input)=>{input.setAttribute('type', 'text')});
+        }else {
+            imgSenha.setAttribute('src', './assets/eye.svg');
+            textSenha.innerText = 'Mostrar senha';
+            inputSenha.forEach((input)=>{input.setAttribute('type', 'password')});
+        }
+    })
+});

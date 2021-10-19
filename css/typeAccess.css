@@ -198,7 +198,6 @@ main .group-access.off {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    background: red;
     overflow: hidden;
 }
 
@@ -286,4 +285,17 @@ main .group-access.off {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
+}
+
+.divMostrarSenha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.divMostrarSenha img {
+    width: 15px;
 }
