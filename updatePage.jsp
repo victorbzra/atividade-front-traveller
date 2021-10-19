@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Traveller | Login</title>
+        <link rel="icon" href="./assets/favicon.svg">
 
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/style.css">
@@ -19,14 +20,14 @@
             <main class="registration">
                 <div class="group-registration">
                     <div class="title-form">
-                        <h2>Insira suas informações</h2>
+                        <h2>Insira suas informaï¿½ï¿½es</h2>
                     </div>
                     <form action="./update-cadastro" class="form-cadastro"method="POST" 
 		 enctype="multipart/form-data">
                         <div class="login-data">
                             <div class="image-profile"><img src="./users/${Usuario.foto}" alt="Imagem de perfil"></div>
                             <div class="container-data">
-                                <label for="user">Usuário</label>
+                                <label for="user">Usuï¿½rio</label>
                                 <input type="text" name="txtUsuario" value="${Usuario.usuario}">
                             </div>
                             <div class="container-data">
@@ -66,7 +67,7 @@
                                 </div>
                                 
                                 <div class="container-data">
-                                    <label for="numero">Número</label>
+                                    <label for="numero">Nï¿½mero</label>
                                     <input type="text" name="txtNumero" class="input-numero" value="${Usuario.numero}">
                                 </div>
                                 

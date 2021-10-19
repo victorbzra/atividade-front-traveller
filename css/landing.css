@@ -54,6 +54,12 @@ main h1 {
     color: #505050;
 }
 
+main h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #505050;
+}
+
 main a {
     display: flex;
     margin-top: 20px;
@@ -78,3 +84,4 @@ main span {
 main span:last-child {
     width: auto;
 }
+

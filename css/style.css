@@ -5,8 +5,32 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #0C3049;
+    color: #30D220;
 }
+
+.rounded {
+    border-radius: 15px !important;
+}
+
+.rounded-top {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.card {
+    -webkit-filter: brightness(100%);
+}
+
+.card:hover {
+    -webkit-filter: brightness(90%);
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+
 
 .card-link:hover {
     color: #0C3049;
@@ -290,4 +314,5 @@ footer {
     max-height: 100%;
     margin: auto;
     display: inline;
+    border-radius: 15px;
 }
